@@ -11,6 +11,7 @@ import {
   RiMenu3Fill,
   RiTwitterFill,
 } from "react-icons/ri";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,15 +87,21 @@ const Header = () => {
                         </div>
                       </a>
                       <Link href="/">
-                        <img
+                        <Image
                           src="/print-hutt-logo.webp"
                           alt="logo"
+                          width={180}
+                          height={56}
                           className="light w-[180px] max-[991px]:w-[115px] block"
+                          loading="lazy"
                         />
-                        <img
+                        <Image
                           src="/print-hutt-logo.webp"
                           alt="logo"
+                          width={180}
+                          height={56}
                           className="dark w-[180px] max-[991px]:w-[115px] hidden"
+                          loading="lazy"
                         />
                       </Link>
                     </div>

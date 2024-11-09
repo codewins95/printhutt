@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CategoryHome = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     speed: 500,
@@ -44,7 +44,7 @@ const CategoryHome = () => {
             <div className="min-[992px]:w-[41.66%] w-full px-[12px] mb-[24px]">
               <div className="bb-category-img relative max-[991px]:hidden">
                 <img
-                  src="https://maraviyainfotech.com/projects/blueberry-tailwind/assets/img/category/category.jpg"
+                  src="https://printhutt.com/media/1.webp"
                   alt="category"
                   className="w-full rounded-[30px]"
                 />
@@ -64,117 +64,125 @@ const CategoryHome = () => {
                   data-aos-delay={600}
                 >
                   <h2 className="font-quicksand text-[124px] text-[#fff] opacity-[0.15] font-bold leading-[1.2] tracking-[0.03rem] max-[1399px]:text-[95px] max-[1199px]:text-[70px] max-[767px]:text-[42px]">
-                    Explore Categories
+                  Gifts Personalised 
                   </h2>
                 </div>
                 <div className="bb-category-block ml-[-150px] w-[calc(100%+150px)] pt-[30px] pl-[30px] bg-[#fff] rounded-tl-[30px] relative max-[991px]:ml-[0] max-[991px]:w-full max-[991px]:p-[0]">
                   <Slider {...settings} className="category-slider">
-                    <div
-                      className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-1 bg-[#fef1f1]"
-                      data-aos="flip-left"
-                      data-aos-duration={1000}
-                      data-aos-delay={200}
-                    >
-                      <div className="category-image mb-[12px]">
-                        <img
-                          src="https://maraviyainfotech.com/projects/blueberry-tailwind/assets/img/category/1.svg"
-                          alt="category"
-                          className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]"
-                        />
-                      </div>
-                      <div className="category-sub-contact">
-                        <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
-                          <a
-                            href="shop-left-sidebar-col-3.html"
-                            className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
-                          >
-                            vegetables
-                          </a>
-                        </h5>
-                        <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
-                          485 items
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#e1fcf2]"
-                      data-aos="flip-left"
-                      data-aos-duration={1000}
-                      data-aos-delay={400}
-                    >
-                      <div className="category-image mb-[12px]">
-                        <img
-                          src="https://maraviyainfotech.com/projects/blueberry-tailwind/assets/img/category/2.svg"
-                          alt="category"
-                          className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]"
-                        />
-                      </div>
-                      <div className="category-sub-contact">
-                        <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
-                          <a
-                            href="shop-left-sidebar-col-3.html"
-                            className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
-                          >
-                            Fruits
-                          </a>
-                        </h5>
-                        <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
-                          291 items
-                        </p>
+                    <div className="pr-2 pl-2">
+                      <div
+                        className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-1 bg-[#fef1f1]"
+                        data-aos="flip-left"
+                        data-aos-duration={1000}
+                        data-aos-delay={200}
+                      >
+                        <div className="category-image mb-[12px] flex items-center justify-center">
+                          <img
+                            src="https://printhutt.com/media/3d-name-lemp.jpg"
+                            alt="category"
+                            className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-full"
+                          />
+                        </div>
+                        <div className="category-sub-contact">
+                          <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
+                            <a
+                              href="shop-left-sidebar-col-3.html"
+                              className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
+                            >
+                              LED Lamp
+                            </a>
+                          </h5>
+                          <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
+                            1 items
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f4f1fe]"
-                      data-aos="flip-left"
-                      data-aos-duration={1000}
-                      data-aos-delay={600}
-                    >
-                      <div className="category-image mb-[12px]">
-                        <img
-                          src="https://maraviyainfotech.com/projects/blueberry-tailwind/assets/img/category/3.svg"
-                          alt="category"
-                          className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]"
-                        />
-                      </div>
-                      <div className="category-sub-contact">
-                        <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
-                          <a
-                            href="shop-left-sidebar-col-3.html"
-                            className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
-                          >
-                            Cold Drinks
-                          </a>
-                        </h5>
-                        <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
-                          49 items
-                        </p>
+                    <div className="pr-2 pl-2">
+                      <div
+                        className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#e1fcf2]"
+                        data-aos="flip-left"
+                        data-aos-duration={1000}
+                        data-aos-delay={400}
+                      >
+                        <div className="category-image mb-[12px] flex items-center justify-center">
+                          <img
+                            src="https://printhutt.com/media/lemps.jpg"
+                            alt="category"
+                            className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-full"
+                          />
+                        </div>
+                        <div className="category-sub-contact">
+                          <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
+                            <a
+                              href="shop-left-sidebar-col-3.html"
+                              className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
+                            >
+                              Acrylic Night Lamp
+                            </a>
+                          </h5>
+                          <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
+                            1 items
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-4 bg-[#fbf9e4]"
-                      data-aos="flip-left"
-                      data-aos-duration={1000}
-                      data-aos-delay={800}
-                    >
-                      <div className="category-image mb-[12px]">
-                        <img
-                          src="https://maraviyainfotech.com/projects/blueberry-tailwind/assets/img/category/4.svg"
-                          alt="category"
-                          className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]"
-                        />
+                    <div className="pr-2 pl-2">
+                      <div
+                        className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f4f1fe]"
+                        data-aos="flip-left"
+                        data-aos-duration={1000}
+                        data-aos-delay={600}
+                      >
+                        <div className="category-image mb-[12px] flex items-center justify-center">
+                          <img
+                            src="https://printhutt.com/media/led-lemp.jpg"
+                            alt="category"
+                            className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-full"
+                          />
+                        </div>
+                        <div className="category-sub-contact">
+                          <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
+                            <a
+                              href="shop-left-sidebar-col-3.html"
+                              className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
+                            >
+                              LED Photo Acrylic
+                            </a>
+                          </h5>
+                          <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
+                            1 items
+                          </p>
+                        </div>
                       </div>
-                      <div className="category-sub-contact">
-                        <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
-                          <a
-                            href="shop-left-sidebar-col-3.html"
-                            className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
-                          >
-                            Bakery
-                          </a>
-                        </h5>
-                        <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
-                          08 items
-                        </p>
+                    </div>
+                    <div className="pr-2 pl-2">
+                      <div
+                        className="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-4 bg-[#fbf9e4]"
+                        data-aos="flip-left"
+                        data-aos-duration={1000}
+                        data-aos-delay={800}
+                      >
+                        <div className="category-image mb-[12px] flex items-center justify-center">
+                          <img
+                            src="https://printhutt.com/media/product/761168274_Raisen-Names-Lamps-3.jpg"
+                            alt="category"
+                            className="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-full"
+                          />
+                        </div>
+                        <div className="category-sub-contact">
+                          <h5 className="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]">
+                            <a
+                              href="shop-left-sidebar-col-3.html"
+                              className="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize"
+                            >
+                              Raisen Name Lamps
+                            </a>
+                          </h5>
+                          <p className="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">
+                            1 items
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </Slider>
