@@ -6,11 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import CategoryHome from "@/components/CategoryHome";
 import Image from "next/image";
-import DayoftheDeal from "@/components/DayoftheDeal";
+import ProductSlider from "@/components/ProductSlider";
 import Testimonials from "@/components/Testimonials";
 import BlogHome from "@/components/BlogHome";
 import InstagramHome from "@/components/InstagramHome";
 import NewProductArea from "@/components/NewProductArea";
+import OurServices from "@/components/OurServices";
 
 // Custom arrow components
 const NextArrow = ({ onClick }) => (
@@ -93,7 +94,36 @@ const Home = () => {
       <CategoryHome />
 
       {/* Day of the deal */}
-      <DayoftheDeal />
+      <section className="section-deal overflow-hidden py-[50px] max-[1199px]:py-[35px]">
+        <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+          <div className="flex flex-wrap w-full">
+            <div className="w-full px-[12px]">
+              <div
+                className="section-title bb-deal mb-[20px] pb-[20px] z-[5] relative flex justify-between max-[991px]:pb-[0] max-[991px]:flex-col max-[991px]:justify-center max-[991px]:text-center"
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-delay={200}
+              >
+                <div className="section-detail max-[991px]:mb-[12px]">
+                  <h2 className="bb-title font-quicksand mb-[0] p-[0] text-[25px] font-bold text-[#3d4750] relative inline capitalize leading-[1] tracking-[0.03rem] max-[767px]:text-[23px]">
+                    Day of the <span className="text-[#6c7fd8]">deal</span>
+                  </h2>
+                  <p className="font-Poppins max-w-[400px] mt-[10px] text-[14px] text-[#686e7d] leading-[18px] font-light tracking-[0.03rem] max-[991px]:mx-[auto]">
+                    Don't wait. The time will never be just right.
+                  </p>
+                </div>
+                <div id="dealend" className="dealend-timer" />
+              </div>
+            </div>
+            <div className="w-full px-[12px]">
+              <div className="bb-deal-slider m-[-12px]">
+                <div className="bb-deal-block owl-carousel"></div>
+                <ProductSlider />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Banner-one */}
       <section className="section-banner-one overflow-hidden py-[50px] max-[1199px]:py-[35px]">
@@ -192,111 +222,10 @@ const Home = () => {
       </section>
 
       {/* New Product tab Area */}
-      <NewProductArea/>      
+      <NewProductArea />
 
       {/*  Services  */}
-      <section className="section-services overflow-hidden py-[50px] max-[1199px]:py-[35px]">
-        <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-          <div className="flex flex-wrap w-full mb-[-24px]">
-            <div
-              className="min-[992px]:w-[25%] min-[768px]:w-[50%] w-full px-[12px] mb-[24px]"
-              data-aos="flip-up"
-              data-aos-duration={1000}
-              data-aos-delay={200}
-            >
-              <div className="bb-services-box p-[30px] border-[1px] border-solid border-[#eee] rounded-[20px] text-center">
-                <div className="services-img mb-[20px] flex justify-center">
-                  <img
-                    src="/img/services/1.png"
-                    alt="services-1"
-                    className="w-[50px]"
-                  />
-                </div>
-                <div className="services-contact">
-                  <h4 className="font-quicksand mb-[8px] text-[18px] font-bold text-[#3d4750] leading-[1.2] tracking-[0.03rem]">
-                    Free Shipping
-                  </h4>
-                  <p className="font-Poppins font-light text-[14px] leading-[20px] text-[#686e7d] tracking-[0.03rem]">
-                    Free shipping on all Us order or above $200
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="min-[992px]:w-[25%] min-[768px]:w-[50%] w-full px-[12px] mb-[24px]"
-              data-aos="flip-up"
-              data-aos-duration={1000}
-              data-aos-delay={400}
-            >
-              <div className="bb-services-box p-[30px] border-[1px] border-solid border-[#eee] rounded-[20px] text-center">
-                <div className="services-img mb-[20px] flex justify-center">
-                  <img
-                    src="/img/services/2.png"
-                    alt="services-2"
-                    className="w-[50px]"
-                  />
-                </div>
-                <div className="services-contact">
-                  <h4 className="font-quicksand mb-[8px] text-[18px] font-bold text-[#3d4750] leading-[1.2] tracking-[0.03rem]">
-                    24x7 Support
-                  </h4>
-                  <p className="font-Poppins font-light text-[14px] leading-[20px] text-[#686e7d] tracking-[0.03rem]">
-                    Contact us 24 hours a day, 7 days a week
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="min-[992px]:w-[25%] min-[768px]:w-[50%] w-full px-[12px] mb-[24px]"
-              data-aos="flip-up"
-              data-aos-duration={1000}
-              data-aos-delay={600}
-            >
-              <div className="bb-services-box p-[30px] border-[1px] border-solid border-[#eee] rounded-[20px] text-center">
-                <div className="services-img mb-[20px] flex justify-center">
-                  <img
-                    src="/img/services/3.png"
-                    alt="services-3"
-                    className="w-[50px]"
-                  />
-                </div>
-                <div className="services-contact">
-                  <h4 className="font-quicksand mb-[8px] text-[18px] font-bold text-[#3d4750] leading-[1.2] tracking-[0.03rem]">
-                    30 Days Return
-                  </h4>
-                  <p className="font-Poppins font-light text-[14px] leading-[20px] text-[#686e7d] tracking-[0.03rem]">
-                    Simply return it within 30 days for an exchange
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="min-[992px]:w-[25%] min-[768px]:w-[50%] w-full px-[12px] mb-[24px]"
-              data-aos="flip-up"
-              data-aos-duration={1000}
-              data-aos-delay={800}
-            >
-              <div className="bb-services-box p-[30px] border-[1px] border-solid border-[#eee] rounded-[20px] text-center">
-                <div className="services-img mb-[20px] flex justify-center">
-                  <img
-                    src="/img/services/4.png"
-                    alt="services-4"
-                    className="w-[50px]"
-                  />
-                </div>
-                <div className="services-contact">
-                  <h4 className="font-quicksand mb-[8px] text-[18px] font-bold text-[#3d4750] leading-[1.2] tracking-[0.03rem]">
-                    Payment Secure
-                  </h4>
-                  <p className="font-Poppins font-light text-[14px] leading-[20px] text-[#686e7d] tracking-[0.03rem]">
-                    Contact us 24 hours a day, 7 days a week
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurServices/>
 
       {/* Pre Product */}
       <section className="section-vendors overflow-hidden pt-[50px] max-[1199px]:pt-[35px] pb-[100px] max-[1199px]:pb-[70px]">

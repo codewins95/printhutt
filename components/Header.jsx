@@ -185,34 +185,27 @@ const Header = () => {
                             </div>
                           </a>
                           <ul className="bb-dropdown-menu min-w-[150px] py-[10px] px-[5px] transition-all duration-[0.3s] ease-in-out mt-[25px] absolute z-[16] text-left opacity-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] block rounded-[10px]">
+                            
                             <li className="py-[4px] px-[15px] m-[0] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">
-                              <a
+                              <Link
                                 className="dropdown-item transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] hover:text-[#6c7fd8] leading-[22px] block w-full font-normal tracking-[0.03rem]"
-                                href="register.html"
-                              >
-                                Register
-                              </a>
-                            </li>
-                            <li className="py-[4px] px-[15px] m-[0] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">
-                              <a
-                                className="dropdown-item transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] hover:text-[#6c7fd8] leading-[22px] block w-full font-normal tracking-[0.03rem]"
-                                href="checkout.html"
+                                href="/checkout"
                               >
                                 Checkout
-                              </a>
+                              </Link>
                             </li>
                             <li className="py-[4px] px-[15px] m-[0] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">
-                              <a
+                              <Link
                                 className="dropdown-item transition-all duration-[0.3s] ease-in-out font-Poppins text-[13px] hover:text-[#6c7fd8] leading-[22px] block w-full font-normal tracking-[0.03rem]"
-                                href="login.html"
+                                href="/login"
                               >
                                 Login
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
-                        <a
-                          href=""
+                        <Link
+                          href="/wishlist"
                           className="bb-header-btn bb-wish-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px]"
                           title="Wishlist"
                         >
@@ -238,7 +231,7 @@ const Header = () => {
                               Wishlist
                             </span>
                           </div>
-                        </a>
+                        </Link>
                         <a
                           onClick={toggelCartSidebar}
                           className="bb-header-btn bb-cart-toggle transition-all duration-[0.3s] ease-in-out relative flex w-[auto] items-center ml-[30px] max-[1199px]:ml-[20px] cursor-pointer"
@@ -404,43 +397,43 @@ const Header = () => {
                         </a>
                         <ul className="bb-dropdown-menu min-w-[205px] p-[10px] transition-all duration-[0.3s] ease-in-out mt-[25px] absolute top-[40px] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[1px] border-solid border-[#eee] flex flex-col rounded-[10px]">
                           <li className="m-[0] py-[5px] px-[15px] flex items-center">
-                            <a
+                            <Link
                               className="dropdown-item transition-all duration-[0.3s] ease-in-out py-[5px] leading-[22px] text-[14px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize block w-full whitespace-nowrap"
-                              href="about-us.html"
+                              href="/about-us"
                             >
                               About Us
-                            </a>
+                            </Link>
                           </li>
                           <li className="m-[0] py-[5px] px-[15px] flex items-center">
-                            <a
+                            <Link
                               className="dropdown-item transition-all duration-[0.3s] ease-in-out py-[5px] leading-[22px] text-[14px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize block w-full whitespace-nowrap"
-                              href="contact-us.html"
+                              href="/contact-us"
                             >
                               Contact Us
-                            </a>
+                            </Link>
                           </li>
                           <li className="m-[0] py-[5px] px-[15px] flex items-center">
-                            <a
+                            <Link
                               className="dropdown-item transition-all duration-[0.3s] ease-in-out py-[5px] leading-[22px] text-[14px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize block w-full whitespace-nowrap"
-                              href="faq.html"
+                              href="/faq"
                             >
                               Faq
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item flex items-center relative mr-[45px]">
-                        <a
+                        <Link
                           className="nav-link font-Poppins relative p-[0] leading-[28px] text-[15px] font-medium text-[#3d4750] block tracking-[0.03rem]"
-                          href="javascript:void(0)"
+                          href="/blog"
                         >
                           Blog
-                        </a>
+                        </Link>
                       </li>
                       <li className="nav-item flex items-center">
-                        <a
+                        <Link
                           className="nav-link font-Poppins  p-[0] leading-[28px] text-[15px] font-medium tracking-[0.03rem] text-[#3d4750] flex"
-                          href="offer.html"
+                          href="/offer"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -470,7 +463,7 @@ const Header = () => {
                             </g>
                           </svg>
                           Offers
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -644,22 +637,22 @@ const Header = () => {
                   </a>
                   <ul className="sub-menu w-full min-w-[auto] p-[0] mb-[10px] static hidden visible opacity-[1]">
                     <li className="relative">
-                      <a
-                        href="about-us.html"
+                      <Link
+                        href="/about-us"
                         className="font-Poppins leading-[28px] tracking-[0.03rem] transition-all duration-[0.3s] ease-in-out font-normal pl-[12px] text-[14px] text-[#777] mb-[0] capitalize block py-[12px]"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="relative">
-                  <a
-                    href="javascript:void(0)"
+                  <Link
+                    href="/blog"
                     className="transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
