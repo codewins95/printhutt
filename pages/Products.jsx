@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Breadcrumb from "@/components/Breadcrumb";
 
 function Products() {
   return (

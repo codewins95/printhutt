@@ -4,6 +4,7 @@ import ProductImageSlider from "@/components/ProductImageSlider";
 import ProductSlider from "@/components/ProductSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Breadcrumb from "@/components/Breadcrumb";
 const ProductDetails = () => {
   return (
     <>
