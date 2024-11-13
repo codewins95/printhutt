@@ -1,3 +1,4 @@
+import Dashboard from "@/pages/admin/Dashboard";
 
 export const metadata = {
   title: "Dashboard",
@@ -6,7 +7,7 @@ export const metadata = {
 const adminDashboardPage = () => {
   return (
     <>
-      <h1>Dashboard</h1>
+      <Dashboard />
     </>
   );
 };

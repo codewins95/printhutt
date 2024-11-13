@@ -3,17 +3,13 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import Header from "./Header";
 import Footer from "./Footer";
+import AdminLayout from "./Admin/AdminLayout";
 
 const Layout = ({ children }) => {
   const pathname = usePathname();
+  const isAdminRoute = pathname.startsWith("/admin");
 
-  const blacklists = [
-    "/admin/dashboard",
-    "/admin/product",
-  ];
-  const isBlacklist = blacklists.includes(pathname);
-
-  if (isBlacklist) return <div>{children}</div>;
+  if (isAdminRoute) return <AdminLayout>{children}</AdminLayout>;
 
   return (
     <>

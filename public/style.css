@@ -1403,6 +1403,7 @@ textarea::placeholder {
 /* category */
 .bb-category-contact .category-title h2 {
   text-shadow: 1px 1px #111a24, -1px 1px #111a24, 1px -1px #111a24, -1px -1px #111a24;
+  color: #989ff5;
 }
 
 .bb-category-block:before {
