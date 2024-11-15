@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 
 const ProductSlider = () => {
+ 
+
   const settings = {
     dots: false,
     infinite: true,
@@ -9,7 +11,33 @@ const ProductSlider = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+
+   
   };
+
 
   return (
     <>

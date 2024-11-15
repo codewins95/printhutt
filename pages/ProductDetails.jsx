@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ProductImageSlider from "@/components/ProductImageSlider";
+import SingleProductSlider from "@/components/SingleProductSlider";
 import ProductSlider from "@/components/ProductSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +18,8 @@ const ProductDetails = () => {
               <div className="bb-single-pro mb-[24px]">
                 <div className="flex flex-wrap mx-[-12px]">
                   <div className="min-[992px]:w-[41.66%] w-full px-[12px] mb-[24px]">
-                    <ProductImageSlider />
+                  
+                    <SingleProductSlider />
                   </div>
                   <div className="min-[992px]:w-[58.33%] w-full px-[12px] mb-[24px]">
                     <div className="bb-single-pro-contact">

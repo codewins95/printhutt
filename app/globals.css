@@ -1,9 +1,21 @@
-@import url('https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css');
+/* @import url('https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.bg-gradient{
+.bg-gradient {
     background: linear-gradient(170deg, #000F44 0%, #4A0012 100%)
+}
+
+
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    /* cursor: crosshair; */
+}
+
+.zoom-overlay {
+    transition: background-position 0.1s ease;
+    z-index: 10;
 }

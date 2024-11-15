@@ -2,6 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import '@/public/style.css';
 import Layout from "@/components/Layout";
+import 'animate.css';
+import "aos/dist/aos.css";
+import 'remixicon/fonts/remixicon.css'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
